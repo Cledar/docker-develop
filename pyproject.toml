@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docker-develop"
+description = "Distirbuted docker-compose configurations for software development."
+version = "1.0.0"
+
+readme = "README.md"
+license= { text = "MPL-2" }
+
+authors = [
+    { name = "Tomasz Bogdał", email="tomek@cledar.com" },
+    { name = "Michał Góra" },
+]
+maintainers = [
+    { name = "Tomasz Bogdał", email="tomek@cledar.com" },
+]
+
+
+keywords = [
+    "docker",
+    "docker-compose",
+    "development",
+    "distributed",
+]
+
+
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",  
+    "Operating System :: POSIX :: Linux",        
+    "Operating System :: MacOS",        
+    "Operating System :: MacOS :: MacOS X",        
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+    "pyyaml",
+]
+
+[project.urls]
+homepage = "https://github.com/cledar/docker-develop"
+repository = "https://github.com/cledar/docker-develop"
+documentation = "https://github.com/cledar/docker-develop/README.md"
+
+[project.scripts]
+docker-develop = "docker_develop.__main__:main"
