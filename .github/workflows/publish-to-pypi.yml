@@ -4,7 +4,7 @@ on: push
 
 jobs:
   build:
-    name: Build distribution
+    name: Build docker-develop
     runs-on: ubuntu-latest
 
     steps:
@@ -29,7 +29,7 @@ jobs:
 
   publish-to-pypi:
     name: >-
-      Publish docker-develop to PyPI
+      Publish to PyPI
     if: startsWith(github.ref, 'refs/tags/')  # only publish to PyPI on tag pushes
     needs:
       - build
@@ -50,7 +50,7 @@ jobs:
 
   publish-to-github:
     name: >-
-      Sign the Python distribution with Sigstore and upload them to GitHub Release
+      Publish to GitHub Release
     needs:
       - publish-to-pypi
     runs-on: ubuntu-latest
