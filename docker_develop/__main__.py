@@ -9,7 +9,7 @@ __copyright__ = "Copyright 2023, Cledar"
 __credits__ = ["Tomasz Bogdal", "Michal Gora"]
 
 __license__ = "MPL 2.0"
-__version__ = "1.1.1"
+__version__ = "1.1.2"
 __maintainer__ = "Tomasz Bogdal"
 
 __email__ = "tomek@cledar.com"
