@@ -50,7 +50,7 @@ documentation = "https://github.com/cledar/docker-develop/README.md"
 docker-develop = "docker_develop.__main__:main"
 
 [tool.bumpver]
-current_version = "1.1.0"
+current_version = "1.1.1"
 version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
 commit_message = "bump version {old_version} -> {new_version}"
 tag_message = "{new_version}"
