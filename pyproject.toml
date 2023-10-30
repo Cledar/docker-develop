@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "docker-develop"
 description = "Distirbuted docker-compose configurations for software development."
-version = "1.1.2"
+version = "1.1.3"
 
 readme = "README.md"
 license= { text = "MPL-2" }
@@ -50,7 +50,7 @@ documentation = "https://github.com/cledar/docker-develop/README.md"
 docker-develop = "docker_develop.__main__:main"
 
 [tool.bumpver]
-current_version = "1.1.2"
+current_version = "1.1.3"
 version_pattern = "MAJOR.MINOR.PATCH[PYTAGNUM]"
 commit_message = "bump version {old_version} -> {new_version}"
 tag_message = "{new_version}"
